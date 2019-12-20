@@ -5,14 +5,13 @@
   "author": "Sergi Nadal",
   "license": "MIT",
   "scripts": {
-    "start":"node server/server.js",
-    "serve": "live-server public/",
+    "start": "node server/server.js",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "devServer": "webpack-dev-server",
     "test": "jest --config=jest.config.json --watchAll",
     "testOne": "jest --config=jest.config.json",
-    "heroku-postbuild":"npm run build:prod"
+    "heroku-postbuild": "npm run build:prod"
   },
   "dependencies": {
     "@babel/cli": "7.6.0",
@@ -23,14 +22,9 @@
     "@babel/preset-react": "7.0.0",
     "babel-loader": "8.0.6",
     "css-loader": "3.2.0",
-    "enzyme": "3.10.0",
-    "enzyme-adapter-react-16": "1.15.0",
-    "enzyme-to-json": "3.4.2",
     "express": "4.17.1",
     "extract-text-webpack-plugin": "3.0.2",
     "identity-obj-proxy": "3.0.0",
-    "jest": "24.9.0",
-    "live-server": "1.2.1",
     "mini-css-extract-plugin": "0.8.0",
     "moment": "2.24.0",
     "node-sass": "4.12.0",
@@ -42,14 +36,20 @@
     "react-modal": "3.10.1",
     "react-redux": "7.1.1",
     "react-router-dom": "5.0.1",
-    "react-test-renderer": "16.10.2",
     "redux": "4.0.4",
     "sass-loader": "8.0.0",
     "style-loader": "1.0.0",
     "uuid": "3.3.3",
     "validator": "11.1.0",
     "webpack": "4.40.2",
-    "webpack-cli": "3.3.8",
+    "webpack-cli": "3.3.8"
+  },
+  "devDependencies": {
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.15.0",
+    "enzyme-to-json": "3.4.2",
+    "jest": "24.9.0",
+    "react-test-renderer": "16.10.2",
     "webpack-dev-server": "3.8.0"
   }
 }
