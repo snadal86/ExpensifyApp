@@ -1,7 +1,5 @@
 import expensesReducer from '../../reducers/expenses'
 import expenses from '../fixtures/expenses'
-import uuid from 'uuid'
-import moment from 'moment'
 
 test('should set default state', () => {
     const state = expensesReducer(undefined, { type: '@@INIT' })
